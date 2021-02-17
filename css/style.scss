@@ -1,0 +1,200 @@
+$smoothScroll: smooth;
+$hidden: hidden;
+$positionFixed: fixed;
+$frontIndex: 999;
+$number-constants: ( "value-0": 0, "value-5": 5);
+$px-constants: ("px-1": 1px, "px-5": 5px, "px-900": 900px);
+$percentage-constants: ("percent-0": 0%, "percent-3": 3%, "percent-5": 5%, "percent-7": 7%, "percent-10": 10%, "percent-15": 15%, "percent-20": 20%, "percent-27": 26%, "percent-40": 40%, "percent-47": 47%, "percent-59": 59%, "percent-70": 70%, "percent-73": 73%, "percent-91": 91%, "percent-100": 100%, "percent-147": 147%);
+$colors: ( "whiteblue": #f0f8ff, "lightread": #f64b3c, "redCream": #EADFDF, "orangeCream": #ECE2DF, "lightblack": #000000, "white-50": rgba(255, 255, 255, 0.50), "black-50": rgba(0, 0, 0, 0.50), "black-70": rgba(0, 0, 0, 0.70));
+$fontSize: ( "heading-5em": 5em);
+$height: ("height-100": 100vh);
+$center: center;
+html {
+    scroll-behavior: $smoothScroll;
+}
+
+body {
+    margin: map-get($number-constants, value-0);
+    padding: map-get($number-constants, value-0);
+}
+
+.navbar {
+    overflow: $hidden;
+    position: $positionFixed !important;
+    top: map-get($percentage-constants, percent-0);
+    left: map-get($percentage-constants, percent-0);
+    right: map-get($percentage-constants, percent-0);
+    z-index: $frontIndex;
+    color: map-get($colors, whiteblue);
+}
+
+h1 {
+    font-size: map-get($fontSize, heading-5em);
+    color: map-get($colors, whiteblue);
+    font-weight: bolder;
+    text-align: $center;
+}
+
+a {
+    color: map-get($colors, lightblack);
+}
+
+a :hover {
+    color: map-get($colors, lightblack);
+}
+
+section {
+    width: map-get($percentage-constants, percent-100);
+    min-height: map-get($height, height-100);
+    overflow: $hidden;
+}
+
+.width-3 {
+    width: map-get($percentage-constants, percent-3);
+}
+
+.width-20 {
+    width: map-get($percentage-constants, percent-20);
+}
+
+.width-30 {
+    width: map-get($percentage-constants, percent-27);
+}
+
+.width-40 {
+    width: map-get($percentage-constants, percent-40);
+}
+
+.p-5 {
+    padding: map-get($percentage-constants, percent-5);
+}
+
+.pr-10 {
+    padding-right: map-get($percentage-constants, percent-10);
+}
+
+.pr-15 {
+    padding-right: map-get($percentage-constants, percent-15);
+}
+
+.pl-10 {
+    padding-left: map-get($percentage-constants, percent-10);
+}
+
+.pl-15 {
+    padding-left: map-get($percentage-constants, percent-15);
+}
+
+.pt-40 {
+    padding-top: map-get($percentage-constants, percent-40);
+}
+
+.mt-5 {
+    margin-top: map-get($percentage-constants, percent-5);
+}
+
+.mt-7 {
+    margin-top: map-get($percentage-constants, percent-7);
+}
+
+.mt-10 {
+    margin-top: map-get($percentage-constants, percent-10);
+}
+
+.mt-20 {
+    margin-top: map-get($percentage-constants, percent-20);
+}
+
+.ml-15 {
+    margin-left: map-get($percentage-constants, percent-15);
+}
+
+.mb-3 {
+    margin-bottom: map-get($percentage-constants, percent-3);
+}
+
+.ml-10 {
+    margin-left: map-get($percentage-constants, percent-10);
+}
+
+.mr-15 {
+    margin-right: map-get($percentage-constants, percent-15);
+}
+
+.color-red {
+    color: map-get($colors, lightread);
+}
+
+.hidden {
+    visibility: $hidden;
+    display: none;
+}
+
+.color-black {
+    color: map-get($colors, lightblack);
+    opacity: map-get($percentage-constants, percent-70);
+}
+
+// lightread
+.invalid-input {
+    // px-constants
+    border: map-get($px-constants, px-1) solid map-get($colors, lightread);
+    box-shadow: map-get($number-constants, value-0) map-get($number-constants, value-0) map-get($px-constants, px-5) map-get($number-constants, value-0) map-get($colors, lightread);
+}
+
+.backgroundSections {
+    background-image: radial-gradient(map-get($percentage-constants, percent-73) map-get($percentage-constants, percent-147), map-get($colors, redCream) map-get($percentage-constants, percent-59), map-get($colors, orangeCream) map-get($percentage-constants, percent-100)), radial-gradient(map-get($percentage-constants, percent-91) map-get($percentage-constants, percent-147), map-get($colors, white-50) map-get($percentage-constants, percent-47), map-get($colors, black-50) map-get($percentage-constants, percent-100));
+    background-blend-mode: screen;
+}
+
+// black-50
+#home-intro {
+    background: linear-gradient( map-get($colors, black-50), map-get($colors, black-50)), url('../media/shopImage.jpg');
+    background-position: $center top;
+    background-size: cover;
+    background-position: $center;
+    background-attachment: fixed;
+    height: map-get($height, height-100);
+}
+
+footer {
+    background: linear-gradient( map-get($colors, black-70), map-get($colors, black-70)), url('../media/footer.jpg');
+    color: map-get($colors, whiteblue);
+    padding: map-get($percentage-constants, percent-5);
+    text-align: $center;
+}
+
+.margin-phone {
+    margin-left: map-get($percentage-constants, percent-0);
+}
+
+@media only screen and (max-width: map-get($px-constants,
+px-900)) {
+    h1 {
+        margin-bottom: map-get($percentage-constants, percent-20);
+    }
+    .pl-15 {
+        padding-left: map-get($percentage-constants, percent-0);
+    }
+    .ml-10 {
+        margin-left: map-get($percentage-constants, percent-0);
+    }
+    .width-40 {
+        width: map-get($percentage-constants, percent-100);
+    }
+    .mr-15 {
+        margin-right: map-get($percentage-constants, percent-0);
+    }
+    .float-right {
+        float: none !important;
+    }
+    .margin-phone {
+        margin: map-get($percentage-constants, percent-10);
+    }
+    .width-30 {
+        width: map-get($percentage-constants, percent-100);
+    }
+    .width-3 {
+        width: map-get($percentage-constants, percent-10);
+    }
+}

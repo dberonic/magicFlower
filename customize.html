@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <script src="/js/init.js" type="module"></script>
+
+
+    <link rel="icon" href="media/images.png" type="image/x-icon">
+
+    <a href="https://icons8.com/icon/44055/twitter"></a>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <title>My flowershop</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img src="media/images.png" class="width-3" alt="logo">
+        <a class="navbar-brand" href="#">
+          Magic Flower</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home </span></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Customize <span class="sr-only">(current)</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <section class="backgroundSections">
+
+        <div class="text-left ml-10 mt-10 float-left width-40 shadow p-5 mb-5 bg-white rounded">
+            <h2>Costumize you bouquete</h2>
+
+
+            <div id="select">
+
+            </div>
+
+
+            <button type="button" class="btn btn-outline-secondary" id="backButton">Back</button>
+            <button type="button" class="btn btn-outline-danger" id="resetButton">Reset</button>
+            <button type="button" class="btn btn-outline-success float-right hidden" id="submitButton">Submit Order</button>
+            <!-- Make it go to form on click -->
+
+        </div>
+        <img src="media/selectOptions/saver.png" id="picture" alt="Your costumized bouquete" class="mr-15 p-5 mt-10 float-right width-30  img-thumbnail shadow p-3 mb-5 bg-white rounded">
+        </div>
+
+
+
+    </section>
+
+    <footer>
+        <p>© 2019. Dora Beronic - All Rights Reserved</p>
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="36" height="36" viewBox="0 0 224 224" style=" fill:#000000;">
+      <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
+        stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-size="none"
+        style="mix-blend-mode: normal">
+        <path d="M0,224v-224h224v224z" fill="none"></path>
+        <g fill="#ffffff">
+          <path
+            d="M177.33333,28h-130.66667c-10.31333,0 -18.66667,8.35333 -18.66667,18.66667v130.66667c0,10.31333 8.35333,18.66667 18.66667,18.66667h71.12933v-64.96933h-21.868v-25.43333h21.868v-18.71333c0,-21.69067 13.26267,-33.516 32.62,-33.516c6.524,-0.01867 13.03867,0.31733 19.52533,0.98v22.68h-13.328c-10.54667,0 -12.6,4.984 -12.6,12.33867v16.19333h25.2l-3.276,25.43333h-22.07333v65.00667h33.46933c10.31333,0 18.66667,-8.35333 18.66667,-18.66667v-130.66667c0,-10.31333 -8.35333,-18.66667 -18.66667,-18.66667z">
+          </path>
+        </g>
+      </g>
+    </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="36" height="36" viewBox="0 0 224 224" style=" fill:#000000;">
+      <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
+        stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-size="none"
+        style="mix-blend-mode: normal">
+        <path d="M0,224v-224h224v224z" fill="none"></path>
+        <g fill="#ffffff">
+          <path
+            d="M74.66667,28c-25.76933,0 -46.66667,20.89733 -46.66667,46.66667v74.66667c0,25.76933 20.89733,46.66667 46.66667,46.66667h74.66667c25.76933,0 46.66667,-20.89733 46.66667,-46.66667v-74.66667c0,-25.76933 -20.89733,-46.66667 -46.66667,-46.66667zM168,46.66667c5.152,0 9.33333,4.18133 9.33333,9.33333c0,5.152 -4.18133,9.33333 -9.33333,9.33333c-5.152,0 -9.33333,-4.18133 -9.33333,-9.33333c0,-5.152 4.18133,-9.33333 9.33333,-9.33333zM112,65.33333c25.76933,0 46.66667,20.89733 46.66667,46.66667c0,25.76933 -20.89733,46.66667 -46.66667,46.66667c-25.76933,0 -46.66667,-20.89733 -46.66667,-46.66667c0,-25.76933 20.89733,-46.66667 46.66667,-46.66667zM112,84c-15.46397,0 -28,12.53603 -28,28c0,15.46397 12.53603,28 28,28c15.46397,0 28,-12.53603 28,-28c0,-15.46397 -12.53603,-28 -28,-28z">
+          </path>
+        </g>
+      </g>
+    </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="36" height="36" viewBox="0 0 224 224" style=" fill:#000000;">
+      <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
+        stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-size="none"
+        style="mix-blend-mode: normal">
+        <path d="M0,224v-224h224v224z" fill="none"></path>
+        <g fill="#ffffff">
+          <path
+            d="M177.33333,28h-130.66667c-10.31333,0 -18.66667,8.35333 -18.66667,18.66667v130.66667c0,10.31333 8.35333,18.66667 18.66667,18.66667h130.66667c10.31333,0 18.66667,-8.35333 18.66667,-18.66667v-130.66667c0,-10.31333 -8.35333,-18.66667 -18.66667,-18.66667zM159.13333,88.79733c0,0.80267 0,1.596 0,3.20133c0,30.39867 -23.20267,65.604 -65.604,65.604c-12.796,0 -24.79867,-4.004 -35.196,-10.39733c1.596,0 4.004,0 5.6,0c10.39733,0 20.804,-4.004 28.80267,-9.604c-10.39733,0 -18.396,-7.196 -21.59733,-15.99733c1.596,0 3.20133,0.80267 4.004,0.80267c2.39867,0 4.004,0 6.40267,-0.80267c-10.39733,-2.39867 -18.396,-11.2 -18.396,-22.4c3.20133,1.596 6.40267,2.39867 10.39733,3.20133c-6.40267,-5.6 -10.39733,-12.00267 -10.39733,-20.00133c0,-4.004 0.80267,-7.99867 3.20133,-11.2c11.2,13.59867 28,23.20267 47.19867,23.996c0,-1.596 -0.80267,-3.20133 -0.80267,-5.6c0,-12.796 10.39733,-23.20267 23.20267,-23.20267c6.40267,0 12.796,2.39867 16.8,7.196c5.6,-0.80267 10.39733,-3.20133 14.40133,-5.6c-1.596,5.6 -5.6,9.604 -10.39733,12.796c4.79733,-0.80267 8.80133,-1.596 13.59867,-4.004c-3.22,4.816 -7.21467,8.81067 -11.21867,12.012z">
+          </path>
+        </g>
+      </g>
+    </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="36" height="36" viewBox="0 0 224 224" style=" fill:#000000;">
+      <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
+        stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-size="none"
+        style="mix-blend-mode: normal">
+        <path d="M0,224v-224h224v224z" fill="none"></path>
+        <g fill="#ffffff">
+          <path
+            d="M201.432,57.736c-2.14667,-8.02667 -8.47467,-14.35467 -16.50133,-16.50133c-14.56,-3.90133 -72.93067,-3.90133 -72.93067,-3.90133c0,0 -58.37067,0 -72.93067,3.90133c-8.02667,2.14667 -14.35467,8.47467 -16.50133,16.50133c-3.90133,14.56 -3.90133,54.264 -3.90133,54.264c0,0 0,39.704 3.90133,54.264c2.14667,8.02667 8.47467,14.35467 16.50133,16.50133c14.56,3.90133 72.93067,3.90133 72.93067,3.90133c0,0 58.37067,0 72.93067,-3.90133c8.036,-2.14667 14.35467,-8.47467 16.50133,-16.50133c3.90133,-14.56 3.90133,-54.264 3.90133,-54.264c0,0 0,-39.704 -3.90133,-54.264zM93.33333,144.33067v-64.66133l56,32.33067z">
+          </path>
+        </g>
+      </g>
+    </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="36" height="36" viewBox="0 0 224 224" style=" fill:#000000;">
+      <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
+        stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-size="none"
+        style="mix-blend-mode: normal">
+        <path d="M0,224v-224h224v224z" fill="none"></path>
+        <g fill="#ffffff">
+          <path
+            d="M178.052,45.99467c-17.60267,-17.612 -41.01067,-27.31867 -65.94933,-27.328c-51.38933,0 -93.212,41.804 -93.23067,93.19333c-0.00933,16.42667 4.284,32.46133 12.44133,46.592l-12.64667,46.88133l48.84133,-11.54533c13.61733,7.42933 28.94267,11.34 44.548,11.34933h0.03733c51.38,0 93.20267,-41.81333 93.23067,-93.19333c0.01867,-24.91067 -9.66933,-48.328 -27.272,-65.94933zM157.71467,145.17067c-1.94133,5.44133 -11.452,10.68667 -15.72667,11.06933c-4.27467,0.392 -8.27867,1.932 -27.95333,-5.824c-23.67867,-9.33333 -38.63067,-33.60933 -39.788,-35.15867c-1.16667,-1.55867 -9.51067,-12.628 -9.51067,-24.08933c0,-11.46133 6.02,-17.09867 8.15733,-19.42267c2.13733,-2.33333 4.65733,-2.912 6.216,-2.912c1.54933,0 3.108,0 4.46133,0.056c1.66133,0.06533 3.5,0.14933 5.24533,4.02267c2.072,4.61067 6.59867,16.128 7.17733,17.29467c0.57867,1.16667 0.97067,2.52933 0.196,4.07867c-0.77467,1.54933 -1.16667,2.52 -2.324,3.88267c-1.16667,1.36267 -2.44533,3.03333 -3.49067,4.07867c-1.16667,1.15733 -2.38,2.42667 -1.02667,4.75067c1.36267,2.33333 6.02933,9.95867 12.95467,16.128c8.904,7.93333 16.39867,10.388 18.732,11.564c2.33333,1.16667 3.68667,0.97067 5.04933,-0.588c1.36267,-1.54933 5.824,-6.79467 7.37333,-9.128c1.54933,-2.33333 3.108,-1.94133 5.24533,-1.16667c2.13733,0.77467 13.58933,6.412 15.91333,7.57867c2.33333,1.16667 3.88267,1.74533 4.46133,2.716c0.57867,0.96133 0.57867,5.628 -1.36267,11.06933z">
+          </path>
+        </g>
+      </g>
+    </svg>
+
+    </footer>
+
+
+
+</body>
+
+</html>
